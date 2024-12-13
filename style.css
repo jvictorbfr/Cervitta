@@ -1,0 +1,313 @@
+
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4d0bd;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px;
+    background-color: #3f3f3f;
+    color: #fff;
+  }
+  
+  h1 {
+    margin: 10px 0;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+  
+  .logo {
+    max-width: 300px;
+    margin-bottom: 60px; 
+    margin-top: 70px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3f3f3f;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+  
+.bebidas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 30px;
+}
+
+.bebida {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.logo-branca {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 300px;
+}
+
+.socios {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 4px;
+}
+
+.socios-jv {
+  width: 107px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 4px;
+}
+
+.bebida-img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.bebida-info {
+  flex: 1;
+}
+
+.bebida h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.back-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3f3f3f;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;  /* Modal menor */
+  max-width: 600px;
+  max-height: 80vh; /* Garantir que caiba na tela */
+  overflow-y: auto; /* Adiciona rolagem interna ao modal se necessário */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.historia {
+  padding: 20px;
+  margin: 20px;
+  margin-left: 300px;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px #3d3d3d
+}
+
+/* Estilo do container principal */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+/* Coluna Esquerda */
+.contact-info {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 120px;
+  margin-top: 110px;
+}
+
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 96px;
+}
+
+.contact-info a {
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Coluna Direita */
+.contact-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-logo .logo-img {
+  margin-top: 70px;
+  height: 400px;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-logo {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Estilo dos itens de redes sociais */
+.social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.social-item img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.social-item a {
+  color: #3f3f3f;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.social-item a:hover {
+  text-decoration: underline;
+}
+
+.social-item span {
+  font-size: 26px;
+  color: #3f3f3f;
+  font-weight: bolder;
+}
+
+/* Estilo dos itens de redes sociais */
+.social-item-insta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.social-item-insta img {
+  width: 42px;
+  height: 42px;
+  margin-right: 4px;
+  margin-left: -5px;
+}
+
+.social-item-insta a {
+  color: #3f3f3f;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.social-item-insta a:hover {
+  text-decoration: underline;
+}
+
+.social-item-insta span {
+  color: #3f3f3f;
+  font-size: 26px;
+  font-weight: bolder;
+}

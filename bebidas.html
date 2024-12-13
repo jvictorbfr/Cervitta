@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossas Bebidas - Cervitta</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Adicionando estilo para o efeito de crescimento */
+    .bebida {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .bebida:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nossas Bebidas</h1>
+  </header>
+  <main>
+    <section class="bebidas">
+      <div class="bebida" onclick="openModal('morango')">
+        <img src="morango.png" alt="Logo Cervitta" class="bebida-img">
+        <div class="bebida-info">
+          <h2>Cerveja Saborizada de Morango</h2>
+          <p><b>Preço:</b> R$22,00</p>
+        </div>
+      </div>
+
+      <div class="bebida" onclick="openModal('maracuja')">
+        <img src="maracuja.png" alt="Logo Cervitta" class="bebida-img">
+        <div class="bebida-info">
+          <h2>Cerveja Saborizada de Maracujá</h2>
+          <p><b>Preço:</b> R$25,00</p>
+        </div>
+      </div>
+
+      <div class="bebida" onclick="openModal('pitaia')">
+        <img src="pitaia.png" alt="Logo Cervitta" class="bebida-img">
+        <div class="bebida-info">
+          <h2>Cerveja Saborizada de Pitaia</h2>
+          <p><b>Preço:</b> R$35,00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body">
+        <!-- Conteúdo do Modal será carregado dinamicamente -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <button onclick="window.location.href='index.html'" class="back-button">Voltar à Página Inicial</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
